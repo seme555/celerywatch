@@ -7,3 +7,6 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+.DS_Store/
+celerywatch.egg-info/
+.Python
