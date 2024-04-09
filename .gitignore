@@ -10,3 +10,6 @@ __pycache__/
 .DS_Store/
 celerywatch.egg-info/
 .Python
+build/
+develop-eggs/
+dist/
