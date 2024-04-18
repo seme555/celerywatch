@@ -154,3 +154,6 @@ venv.bak/
 dmypy.json
 
 # Pyre type checker
+.pyre/
+
+# pytype static type analyzer
