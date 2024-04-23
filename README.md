@@ -4,3 +4,6 @@
 
 <h1 align="center">CeleryWatch</h1>
 
+---
+
+## What is CeleryWatch?
