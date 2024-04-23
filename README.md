@@ -7,3 +7,6 @@
 ---
 
 ## What is CeleryWatch?
+
+**CeleryWatch** is a TUI (Text User Interface) application for debugging and monitoring Celery tasks in real time. It connects to your Celery broker (Redis, RabbitMQ, etc.), listens to task lifecycle events, and presents them in an interactive terminal interface â€” complete with retry capabilities, traceback viewing, and more.
+
