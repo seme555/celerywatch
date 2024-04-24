@@ -16,3 +16,6 @@ The interface is built using [Textual](https://github.com/Textualize/textual), a
 
 ---
 
+## Features
+
+- Live event monitoring: Captures real-time task data using the Celery event stream
