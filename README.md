@@ -13,3 +13,6 @@
 It uses Celery's built-in **event system**, meaning no code changes are required in your app â€” just run your workers with `--events` enabled.
 
 The interface is built using [Textual](https://github.com/Textualize/textual), a modern TUI framework for Python.
+
+---
+
