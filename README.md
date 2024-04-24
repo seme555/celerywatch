@@ -19,3 +19,6 @@ The interface is built using [Textual](https://github.com/Textualize/textual), a
 ## Features
 
 - Live event monitoring: Captures real-time task data using the Celery event stream
+- Retry failed tasks: One-key retry of failed tasks with original or custom arguments
+- Detailed debug panels: View args, kwargs, exceptions, and tracebacks
+- Full keyboard support: Efficient, mouse-free task inspection
