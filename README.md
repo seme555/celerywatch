@@ -22,3 +22,6 @@ The interface is built using [Textual](https://github.com/Textualize/textual), a
 - Retry failed tasks: One-key retry of failed tasks with original or custom arguments
 - Detailed debug panels: View args, kwargs, exceptions, and tracebacks
 - Full keyboard support: Efficient, mouse-free task inspection
+- In-memory task store: View and scroll through all received tasks
+- Styled UI: Powered by Textual and customizable stylesheets
+- Works with any Celery-based app, including Django, Flask, FastAPI, etc.
