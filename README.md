@@ -25,3 +25,6 @@ The interface is built using [Textual](https://github.com/Textualize/textual), a
 - In-memory task store: View and scroll through all received tasks
 - Styled UI: Powered by Textual and customizable stylesheets
 - Works with any Celery-based app, including Django, Flask, FastAPI, etc.
+
+---
+
