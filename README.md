@@ -31,3 +31,6 @@ The interface is built using [Textual](https://github.com/Textualize/textual), a
 ## Screenshot
 
 <p align="center">
+  <img src="./screenshots/celerywatch.png" alt="CeleryWatch Demo" width="720"/>
+</p>
+
