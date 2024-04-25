@@ -28,3 +28,6 @@ The interface is built using [Textual](https://github.com/Textualize/textual), a
 
 ---
 
+## Screenshot
+
+<p align="center">
