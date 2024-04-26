@@ -43,3 +43,6 @@ pip install celerywatch
 ```
 
 To use CeleryWatch, you need to start your Celery worker with the `--events` flag enabled to emit task event data:
+
+```bash
+celery -A your_project worker --loglevel=info --events
