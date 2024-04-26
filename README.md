@@ -49,3 +49,6 @@ celery -A your_project worker --loglevel=info --events
 ```
 
 Then, in another terminal, launch CeleryWatch with the same broker URI:
+
+```bash
+celerywatch --broker=redis://localhost:6379/0
