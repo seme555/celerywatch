@@ -40,3 +40,6 @@ The interface is built using [Textual](https://github.com/Textualize/textual), a
 
 ```bash
 pip install celerywatch
+```
+
+To use CeleryWatch, you need to start your Celery worker with the `--events` flag enabled to emit task event data:
