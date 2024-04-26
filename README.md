@@ -37,3 +37,6 @@ The interface is built using [Textual](https://github.com/Textualize/textual), a
 ---
 
 ## Installation
+
+```bash
+pip install celerywatch
