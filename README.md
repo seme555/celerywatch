@@ -46,3 +46,6 @@ To use CeleryWatch, you need to start your Celery worker with the `--events` fla
 
 ```bash
 celery -A your_project worker --loglevel=info --events
+```
+
+Then, in another terminal, launch CeleryWatch with the same broker URI:
