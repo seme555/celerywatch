@@ -52,3 +52,6 @@ Then, in another terminal, launch CeleryWatch with the same broker URI:
 
 ```bash
 celerywatch --broker=redis://localhost:6379/0
+```
+
+
