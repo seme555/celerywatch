@@ -55,3 +55,6 @@ celerywatch --broker=redis://localhost:6379/0
 ```
 
 
+---
+
+## Keyboard Shortcuts
