@@ -61,3 +61,6 @@ celerywatch --broker=redis://localhost:6379/0
 
 | Key        | Action                        |
 |------------|-------------------------------|
+| `r`        | Retry selected task           |
+| `ctrl+r`   | Retry with custom args        |
+| `c`        | Clear task table              |
