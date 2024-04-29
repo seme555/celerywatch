@@ -64,3 +64,6 @@ celerywatch --broker=redis://localhost:6379/0
 | `r`        | Retry selected task           |
 | `ctrl+r`   | Retry with custom args        |
 | `c`        | Clear task table              |
+| `q`        | Quit the app                  |
+| `â†‘` / `â†“`  | Navigate task list            |
+| `Enter`    | Show traceback / task details |
