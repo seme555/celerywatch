@@ -7,3 +7,6 @@ name = "celerywatch"
 version = "0.1.0"
 description = "A terminal-based Celery monitoring and debugging tool."
 readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Semere Abera", email = "semeabe@gmail.com" }
