@@ -25,3 +25,4 @@ celerywatch = "celerywatch.cli:main"
 packages = ["celerywatch", "celerywatch.widgets", "celerywatch.models"]
 
 [tool.setuptools.package-data]
+"celerywatch" = ["styles/*.tcss"]
