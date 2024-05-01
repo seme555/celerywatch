@@ -10,3 +10,6 @@ readme = "README.md"
 license = "MIT"
 authors = [
     { name = "Semere Abera", email = "semeabe@gmail.com" }
+]
+dependencies = [
+    "celery>=5.5.2",
