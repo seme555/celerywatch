@@ -19,3 +19,6 @@ dependencies = [
 ]
 
 [project.scripts]
+celerywatch = "celerywatch.cli:main"
+
+[tool.setuptools]
