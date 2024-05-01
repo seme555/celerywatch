@@ -22,3 +22,6 @@ dependencies = [
 celerywatch = "celerywatch.cli:main"
 
 [tool.setuptools]
+packages = ["celerywatch", "celerywatch.widgets", "celerywatch.models"]
+
+[tool.setuptools.package-data]
