@@ -7,3 +7,6 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--broker', required=True, help='Celery broker URI (e.g. redis://localhost:6379/0)')
     args = parser.parse_args()
+
+    queue = multiprocessing.Queue()
+    p = multiprocessing.Process(target=event_worker, args=(queue, args.broker))
