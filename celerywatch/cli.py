@@ -16,3 +16,6 @@ def main():
     finally:
         p.terminate()
         p.join()
+
+if __name__ == '__main__':
+    main()
