@@ -13,3 +13,6 @@ def main():
     p.start()
     try:
         CeleryMonitor(task_queue=queue, broker_uri=args.broker).run()
+    finally:
+        p.terminate()
+        p.join()
