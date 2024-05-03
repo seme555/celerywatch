@@ -10,3 +10,6 @@ def main():
 
     queue = multiprocessing.Queue()
     p = multiprocessing.Process(target=event_worker, args=(queue, args.broker))
+    p.start()
+    try:
+        CeleryMonitor(task_queue=queue, broker_uri=args.broker).run()
