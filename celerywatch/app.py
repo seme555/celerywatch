@@ -10,3 +10,6 @@ from celerywatch.widgets import CustomRetryModalScreen
 from celerywatch.models import TaskRepository
 from celerywatch.utils import convert_args_safely
 
+
+class CeleryMonitor(App):
+    CSS_PATH = "styles/styles.tcss"
