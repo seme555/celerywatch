@@ -13,3 +13,6 @@ from celerywatch.utils import convert_args_safely
 
 class CeleryMonitor(App):
     CSS_PATH = "styles/styles.tcss"
+
+    BINDINGS = [
+        Binding(key="r", action="", description="Retry Selected Task"),
