@@ -16,3 +16,6 @@ class CeleryMonitor(App):
 
     BINDINGS = [
         Binding(key="r", action="", description="Retry Selected Task"),
+        Binding(key="ctrl+r", action="custom_task_retry", description="Retry with custom args"),
+        Binding(key='c', action='clear_table', description="Clear table data"),
+        Binding(key="q", action="quit", description="Quit the app"),
