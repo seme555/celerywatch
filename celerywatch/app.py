@@ -22,3 +22,6 @@ class CeleryMonitor(App):
     ]
 
     def __init__(self, task_queue, broker_uri=None, **kwargs):
+        super().__init__(**kwargs)
+        self.task_queue = task_queue
+        self.broker_uri = broker_uri
