@@ -25,3 +25,6 @@ class CeleryMonitor(App):
         super().__init__(**kwargs)
         self.task_queue = task_queue
         self.broker_uri = broker_uri
+        self.added_tasks = set()
+        self.title = "CeleryWatch - Debug and Monitor your celery tasks"
+        self.task_repo = TaskRepository()
