@@ -28,3 +28,6 @@ class CeleryMonitor(App):
         self.added_tasks = set()
         self.title = "CeleryWatch - Debug and Monitor your celery tasks"
         self.task_repo = TaskRepository()
+
+    def compose(self):
+        yield Header(show_clock=True)
