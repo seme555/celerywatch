@@ -40,3 +40,6 @@ class CeleryMonitor(App):
         yield self.table
 
         self.traceback_panel = Log(highlight=True, classes="outline")
+        self.traceback_panel.styles.height = 15
+        self.traceback_panel.styles.dock = "bottom"
+        self.traceback_panel.styles.margin = (0, 0, 1, 0)
