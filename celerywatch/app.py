@@ -34,3 +34,6 @@ class CeleryMonitor(App):
         self.table = DataTable(classes="table-outline")
         self.table.add_columns("UUID", "Name", "Args", "Kwargs", "State", "Datetime", "ETA")
         self.table.add_column("Exception", width=20)
+        self.table.add_column("Traceback", width=20)
+        self.table.cursor_type = 'row'
+        self.table.zebra_stripes = True
