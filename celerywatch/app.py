@@ -31,3 +31,6 @@ class CeleryMonitor(App):
 
     def compose(self):
         yield Header(show_clock=True)
+        self.table = DataTable(classes="table-outline")
+        self.table.add_columns("UUID", "Name", "Args", "Kwargs", "State", "Datetime", "ETA")
+        self.table.add_column("Exception", width=20)
