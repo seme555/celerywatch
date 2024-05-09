@@ -37,3 +37,6 @@ class CeleryMonitor(App):
         self.table.add_column("Traceback", width=20)
         self.table.cursor_type = 'row'
         self.table.zebra_stripes = True
+        yield self.table
+
+        self.traceback_panel = Log(highlight=True, classes="outline")
