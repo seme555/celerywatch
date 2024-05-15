@@ -49,3 +49,6 @@ class CeleryMonitor(App):
 
         yield Footer()
 
+    async def on_mount(self):
+        self.theme = "dracula"
+        self.tracebacks = {}
