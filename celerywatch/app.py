@@ -43,3 +43,6 @@ class CeleryMonitor(App):
         self.traceback_panel.styles.height = 15
         self.traceback_panel.styles.dock = "bottom"
         self.traceback_panel.styles.margin = (0, 0, 1, 0)
+        self.traceback_panel.styles.padding = 1
+        self.traceback_panel.write("No traceback available")
+        yield self.traceback_panel 
