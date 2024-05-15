@@ -58,3 +58,6 @@ class CeleryMonitor(App):
         if action:
             r, k = convert_args_safely(r, k)
             row_key = self.table.cursor_row
+            if row_key is not None:
+                try:
+                    row = self.table.get_row_at(row_key)
