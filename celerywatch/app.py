@@ -46,3 +46,6 @@ class CeleryMonitor(App):
         self.traceback_panel.styles.padding = 1
         self.traceback_panel.write("No traceback available")
         yield self.traceback_panel 
+
+        yield Footer()
+
