@@ -61,3 +61,6 @@ class CeleryMonitor(App):
             if row_key is not None:
                 try:
                     row = self.table.get_row_at(row_key)
+                    uuid = row[0]
+                    task = self.task_repo.get_retriable_task(uuid)
+                    await self.retry_selected_task(
