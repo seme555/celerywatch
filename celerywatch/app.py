@@ -52,3 +52,6 @@ class CeleryMonitor(App):
     async def on_mount(self):
         self.theme = "dracula"
         self.tracebacks = {}
+        asyncio.create_task(self.update_table())
+
+    async def create_retry_task_with_custom_args(self, action, r, k) -> None:
