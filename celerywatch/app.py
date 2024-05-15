@@ -55,3 +55,6 @@ class CeleryMonitor(App):
         asyncio.create_task(self.update_table())
 
     async def create_retry_task_with_custom_args(self, action, r, k) -> None:
+        if action:
+            r, k = convert_args_safely(r, k)
+            row_key = self.table.cursor_row
