@@ -64,3 +64,6 @@ class CeleryMonitor(App):
                     uuid = row[0]
                     task = self.task_repo.get_retriable_task(uuid)
                     await self.retry_selected_task(
+                        task_name=task.name,
+                        r=r,
+                        k=k,
