@@ -73,3 +73,6 @@ class CeleryMonitor(App):
                     self.traceback_panel.write(r)
                 except RowDoesNotExist:
                     self.notify(f"No task is selected.", severity="error")
+
+    async def action_custom_task_retry(self) -> None:
+        def apply_retry(data: list):
