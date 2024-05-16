@@ -67,3 +67,6 @@ class CeleryMonitor(App):
                         task_name=task.name,
                         r=r,
                         k=k,
+                        uuid=uuid
+                    )
+                    self.traceback_panel.write(k)
