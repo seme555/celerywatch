@@ -70,3 +70,6 @@ class CeleryMonitor(App):
                         uuid=uuid
                     )
                     self.traceback_panel.write(k)
+                    self.traceback_panel.write(r)
+                except RowDoesNotExist:
+                    self.notify(f"No task is selected.", severity="error")
