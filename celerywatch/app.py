@@ -76,3 +76,6 @@ class CeleryMonitor(App):
 
     async def action_custom_task_retry(self) -> None:
         def apply_retry(data: list):
+            action, r, k = data
+            asyncio.create_task(self.create_retry_task_with_custom_args(action, r, k)) 
+        self.push_screen(CustomRetryModalScreen(), apply_retry)
