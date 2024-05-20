@@ -82,3 +82,6 @@ class CeleryMonitor(App):
 
     async def action_clear_table(self) -> None:
         self.table.clear()
+        self.traceback_panel.clear()
+        self.traceback_panel.write("No traceback available")
+        self.notify("Clearing table done.")
