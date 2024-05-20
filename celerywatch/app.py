@@ -79,3 +79,6 @@ class CeleryMonitor(App):
             action, r, k = data
             asyncio.create_task(self.create_retry_task_with_custom_args(action, r, k)) 
         self.push_screen(CustomRetryModalScreen(), apply_retry)
+
+    async def action_clear_table(self) -> None:
+        self.table.clear()
