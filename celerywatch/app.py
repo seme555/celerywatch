@@ -85,3 +85,6 @@ class CeleryMonitor(App):
         self.traceback_panel.clear()
         self.traceback_panel.write("No traceback available")
         self.notify("Clearing table done.")
+
+    async def retry_selected_task(self, task_name, r, k, uuid):
+        retry_task(
