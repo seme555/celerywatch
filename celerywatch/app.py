@@ -88,3 +88,6 @@ class CeleryMonitor(App):
 
     async def retry_selected_task(self, task_name, r, k, uuid):
         retry_task(
+            task_name,
+            args=r,
+            kwargs=k,
