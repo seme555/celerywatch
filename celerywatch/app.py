@@ -91,3 +91,6 @@ class CeleryMonitor(App):
             task_name,
             args=r,
             kwargs=k,
+            broker_uri=self.broker_uri
+            )
+        self.notify(f"Retrying task {uuid}")
