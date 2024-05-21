@@ -97,3 +97,6 @@ class CeleryMonitor(App):
 
     async def on_key(self, event):
         if event.key == "r":
+            row_key = self.table.cursor_row
+            if row_key is not None:
+                try:
