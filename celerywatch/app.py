@@ -94,3 +94,6 @@ class CeleryMonitor(App):
             broker_uri=self.broker_uri
             )
         self.notify(f"Retrying task {uuid}")
+
+    async def on_key(self, event):
+        if event.key == "r":
