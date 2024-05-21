@@ -106,3 +106,6 @@ class CeleryMonitor(App):
                     await self.retry_selected_task(
                         task_name=task.name,
                         r=ast.literal_eval(task.args),
+                        k=ast.literal_eval(task.kwargs),
+                        uuid=uuid
+                    )
