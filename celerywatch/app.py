@@ -118,3 +118,6 @@ class CeleryMonitor(App):
 
 
     async def on_data_table_row_highlighted(self, event: DataTable.RowHighlighted):
+        row = self.table.get_row(event.row_key)
+        uuid = row[0]
+        state_ = row[4]
