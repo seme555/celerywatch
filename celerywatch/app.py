@@ -112,3 +112,6 @@ class CeleryMonitor(App):
 
                 except RowDoesNotExist:
                     self.notify(f"No task is selected.", severity="error")
+
+        elif event.key == "ctrl+q":
+            self.exit()
