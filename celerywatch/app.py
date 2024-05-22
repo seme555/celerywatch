@@ -124,3 +124,6 @@ class CeleryMonitor(App):
         traceback_key = f"{uuid}.{state_}"
         traceback = self.task_repo.get_traceback(traceback_key)
         self.traceback_panel.clear()
+        self.traceback_panel.write(traceback or "No traceback available")
+
+    async def update_table(self):
