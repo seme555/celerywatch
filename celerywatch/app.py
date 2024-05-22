@@ -133,3 +133,6 @@ class CeleryMonitor(App):
                 if new_task.get('uuid'):
                     task = self.task_repo.serialize(new_task)
                     self.task_repo.add(task)
+
+                    # Store tracebacks
+                    traceback_key = f"{task.uuid}.{task.state}"
