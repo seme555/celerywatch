@@ -121,3 +121,6 @@ class CeleryMonitor(App):
         row = self.table.get_row(event.row_key)
         uuid = row[0]
         state_ = row[4]
+        traceback_key = f"{uuid}.{state_}"
+        traceback = self.task_repo.get_traceback(traceback_key)
+        self.traceback_panel.clear()
