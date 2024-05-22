@@ -115,3 +115,6 @@ class CeleryMonitor(App):
 
         elif event.key == "ctrl+q":
             self.exit()
+
+
+    async def on_data_table_row_highlighted(self, event: DataTable.RowHighlighted):
