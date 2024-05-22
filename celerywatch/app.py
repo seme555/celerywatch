@@ -127,3 +127,6 @@ class CeleryMonitor(App):
         self.traceback_panel.write(traceback or "No traceback available")
 
     async def update_table(self):
+        while True:
+            while not self.task_queue.empty():
+                new_task = self.task_queue.get()
