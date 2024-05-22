@@ -130,3 +130,6 @@ class CeleryMonitor(App):
         while True:
             while not self.task_queue.empty():
                 new_task = self.task_queue.get()
+                if new_task.get('uuid'):
+                    task = self.task_repo.serialize(new_task)
+                    self.task_repo.add(task)
