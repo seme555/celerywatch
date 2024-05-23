@@ -139,3 +139,6 @@ class CeleryMonitor(App):
                     self.task_repo.add_traceback(traceback_key, task.traceback)
 
                     self.table.add_row(
+                        task.uuid,
+                        task.name,
+                        task.args,
