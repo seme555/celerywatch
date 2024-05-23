@@ -145,3 +145,6 @@ class CeleryMonitor(App):
                         task.kwargs,
                         task.styled_state,
                         task.timestamp,
+                        task.eta,
+                        task.styled_exception,
+                        task.styled_traceback
