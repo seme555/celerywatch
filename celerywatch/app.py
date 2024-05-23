@@ -148,3 +148,6 @@ class CeleryMonitor(App):
                         task.eta,
                         task.styled_exception,
                         task.styled_traceback
+                    )
+                    if task.state == "RECEIVED":
+                        self.task_repo.add_retriable_task(task=task)
