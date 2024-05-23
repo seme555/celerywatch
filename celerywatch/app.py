@@ -151,3 +151,5 @@ class CeleryMonitor(App):
                     )
                     if task.state == "RECEIVED":
                         self.task_repo.add_retriable_task(task=task)
+
+            await asyncio.sleep(0.5)
