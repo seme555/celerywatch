@@ -142,3 +142,6 @@ class CeleryMonitor(App):
                         task.uuid,
                         task.name,
                         task.args,
+                        task.kwargs,
+                        task.styled_state,
+                        task.timestamp,
