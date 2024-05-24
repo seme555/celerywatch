@@ -7,3 +7,6 @@ from celery.events.state import State
 app_celery = None
 state = State()
 
+def set_broker_uri(uri):
+    global app_celery
+    app_celery = Celery('celerywatch', broker=uri)
