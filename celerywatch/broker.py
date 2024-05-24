@@ -4,3 +4,6 @@ from celery.events import EventReceiver
 from celery.events.state import State
 
 
+app_celery = None
+state = State()
+
