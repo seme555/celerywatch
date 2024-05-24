@@ -10,3 +10,6 @@ state = State()
 def set_broker_uri(uri):
     global app_celery
     app_celery = Celery('celerywatch', broker=uri)
+
+def retry_task(task_name, args=None, kwargs=None, broker_uri=None):
+    global app_celery
