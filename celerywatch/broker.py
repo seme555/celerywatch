@@ -13,3 +13,6 @@ def set_broker_uri(uri):
 
 def retry_task(task_name, args=None, kwargs=None, broker_uri=None):
     global app_celery
+    if app_celery is None:
+        if broker_uri is None:
+            raise RuntimeError("Celery app is not initialized and no broker URI was provided.")
