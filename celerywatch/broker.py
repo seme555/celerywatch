@@ -16,3 +16,6 @@ def retry_task(task_name, args=None, kwargs=None, broker_uri=None):
     if app_celery is None:
         if broker_uri is None:
             raise RuntimeError("Celery app is not initialized and no broker URI was provided.")
+        set_broker_uri(broker_uri)
+    sig = signature(task_name, args=args, kwargs=kwargs)
+    sig.apply_async()
