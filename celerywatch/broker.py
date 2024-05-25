@@ -22,3 +22,6 @@ def retry_task(task_name, args=None, kwargs=None, broker_uri=None):
 
 def event_worker(queue, broker_uri):
     set_broker_uri(broker_uri)
+    def event_handler(event):
+        state.event(event)
+        # Push relevant info to queue
