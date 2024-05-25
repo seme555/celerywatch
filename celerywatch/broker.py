@@ -19,3 +19,6 @@ def retry_task(task_name, args=None, kwargs=None, broker_uri=None):
         set_broker_uri(broker_uri)
     sig = signature(task_name, args=args, kwargs=kwargs)
     sig.apply_async()
+
+def event_worker(queue, broker_uri):
+    set_broker_uri(broker_uri)
