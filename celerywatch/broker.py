@@ -25,3 +25,6 @@ def event_worker(queue, broker_uri):
     def event_handler(event):
         state.event(event)
         # Push relevant info to queue
+        queue.put({
+            'uuid': event.get('uuid'),
+            'name': event.get('name'),
