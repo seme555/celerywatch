@@ -31,3 +31,6 @@ def event_worker(queue, broker_uri):
             'args': event.get('args'),
             'kwargs': event.get('kwargs'),
             'state': event.get('state'),
+            'exception': event.get('exception'),
+            'traceback': event.get('traceback'),
+            'eta': event.get('eta'),
