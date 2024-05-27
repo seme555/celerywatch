@@ -40,3 +40,4 @@ def event_worker(queue, broker_uri):
     with app_celery.connection() as connection:
         recv = EventReceiver(connection, handlers={'*': event_handler})
         recv.capture(limit=None, timeout=None, wakeup=True)
+
