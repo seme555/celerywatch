@@ -28,3 +28,6 @@ def event_worker(queue, broker_uri):
         queue.put({
             'uuid': event.get('uuid'),
             'name': event.get('name'),
+            'args': event.get('args'),
+            'kwargs': event.get('kwargs'),
+            'state': event.get('state'),
