@@ -34,3 +34,6 @@ def event_worker(queue, broker_uri):
             'exception': event.get('exception'),
             'traceback': event.get('traceback'),
             'eta': event.get('eta'),
+            'timestamp': event.get('timestamp'),
+        })
+
