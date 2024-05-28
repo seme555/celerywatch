@@ -10,3 +10,5 @@ def convert_args_safely(r: str | None, k: str | None):
         fake_call = f"f({k})"
         parsed = ast.parse(fake_call, mode='eval')
         kwargs = {kw.arg: ast.literal_eval(kw.value) for kw in parsed.body.keywords}
+
+    return args, kwargs
