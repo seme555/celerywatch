@@ -16,3 +16,6 @@ class Task:
     traceback: str
     styled_traceback: str
     eta: str
+    timestamp: str
+
+@dataclass
