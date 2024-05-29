@@ -13,3 +13,6 @@ class Task:
     styled_state: str
     exception: str
     styled_exception: str 
+    traceback: str
+    styled_traceback: str
+    eta: str
