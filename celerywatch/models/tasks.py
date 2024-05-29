@@ -4,3 +4,6 @@ from datetime import datetime
 from rich.text import Text
 
 @dataclass
+class Task:
+    uuid: str
+    name: str
