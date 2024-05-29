@@ -10,3 +10,6 @@ class Task:
     args: str
     kwargs: str
     state: str
+    styled_state: str
+    exception: str
+    styled_exception: str 
