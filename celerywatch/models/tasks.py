@@ -7,3 +7,6 @@ from rich.text import Text
 class Task:
     uuid: str
     name: str
+    args: str
+    kwargs: str
+    state: str
