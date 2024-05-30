@@ -19,3 +19,6 @@ class Task:
     timestamp: str
 
 @dataclass
+class RetriableTask:
+    uuid: str
+    name: str
