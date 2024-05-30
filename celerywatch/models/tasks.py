@@ -22,3 +22,6 @@ class Task:
 class RetriableTask:
     uuid: str
     name: str
+    args: str
+    kwargs: str
+
