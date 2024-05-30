@@ -25,3 +25,6 @@ class RetriableTask:
     args: str
     kwargs: str
 
+
+
+class TaskRepository:
