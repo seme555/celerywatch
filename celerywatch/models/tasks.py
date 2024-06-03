@@ -34,3 +34,6 @@ class TaskRepository:
         self._retriable_tasks: dict[str, RetriableTask] = {}
 
     def add(self, task: Task):
+        self._tasks[task.uuid] = task
+
+    def add_traceback(self, key: str, traceback: str) -> None:
