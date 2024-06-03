@@ -37,3 +37,6 @@ class TaskRepository:
         self._tasks[task.uuid] = task
 
     def add_traceback(self, key: str, traceback: str) -> None:
+        self._tracebacks[key] = traceback
+
+    def get_traceback(self, key: str) -> str | None:
