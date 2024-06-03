@@ -28,3 +28,6 @@ class RetriableTask:
 
 
 class TaskRepository:
+    def __init__(self):
+        self._tasks: dict[str, Task] = {}
+        self._tracebacks: dict[str, str] = {}
