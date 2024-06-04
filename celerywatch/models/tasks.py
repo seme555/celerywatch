@@ -43,3 +43,6 @@ class TaskRepository:
         traceback = self._tracebacks.get(key)
         return traceback
     
+    def add_retriable_task(self, task: Task) -> None:
+        self._retriable_tasks[task.uuid] = RetriableTask(
+            uuid=task.uuid,
