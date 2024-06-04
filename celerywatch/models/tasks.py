@@ -46,3 +46,6 @@ class TaskRepository:
     def add_retriable_task(self, task: Task) -> None:
         self._retriable_tasks[task.uuid] = RetriableTask(
             uuid=task.uuid,
+            name=task.name,
+            args=task.args,
+            kwargs=task.kwargs
