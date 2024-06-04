@@ -61,3 +61,6 @@ class TaskRepository:
         return list(self._tasks.values())
 
     def clear(self):
+        self._tasks.clear()
+
+    def serialize(self, task: dict) -> Task | None:
