@@ -40,3 +40,6 @@ class TaskRepository:
         self._tracebacks[key] = traceback
 
     def get_traceback(self, key: str) -> str | None:
+        traceback = self._tracebacks.get(key)
+        return traceback
+    
