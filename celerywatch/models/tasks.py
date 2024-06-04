@@ -49,3 +49,6 @@ class TaskRepository:
             name=task.name,
             args=task.args,
             kwargs=task.kwargs
+        )
+
+    def get_retriable_task(self, uuid: str) -> RetriableTask | None:
