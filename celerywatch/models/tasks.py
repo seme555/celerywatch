@@ -58,3 +58,6 @@ class TaskRepository:
         return self._tasks.get(uuid)
 
     def all(self) -> list[Task]:
+        return list(self._tasks.values())
+
+    def clear(self):
