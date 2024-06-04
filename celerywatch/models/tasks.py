@@ -52,3 +52,6 @@ class TaskRepository:
         )
 
     def get_retriable_task(self, uuid: str) -> RetriableTask | None:
+        return self._retriable_tasks.get(uuid)
+
+    def find_by_uuid(self, uuid: str) -> Task | None:
