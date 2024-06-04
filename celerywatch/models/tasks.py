@@ -64,3 +64,6 @@ class TaskRepository:
         self._tasks.clear()
 
     def serialize(self, task: dict) -> Task | None:
+        uuid = task['uuid']
+        if uuid:
+            # Get the current timestamp as formatted string
