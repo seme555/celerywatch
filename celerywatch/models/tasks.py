@@ -55,3 +55,6 @@ class TaskRepository:
         return self._retriable_tasks.get(uuid)
 
     def find_by_uuid(self, uuid: str) -> Task | None:
+        return self._tasks.get(uuid)
+
+    def all(self) -> list[Task]:
