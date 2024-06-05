@@ -70,3 +70,6 @@ class TaskRepository:
             # timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             timestamp = task['timestamp']
             ts_to_dt = datetime.fromtimestamp(timestamp)
+            formatted_dt = ts_to_dt.strftime("%Y-%m-%d %H:%M:%S")
+
+            # Determine color based on state
