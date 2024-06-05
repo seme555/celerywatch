@@ -76,3 +76,6 @@ class TaskRepository:
             state = task['state'] or ""
             color = {
                 "RECEIVED": "black on yellow",
+                "STARTED": "black on cyan",
+                "SUCCESS": "black on green",
+                "FAILURE": "black on red"
