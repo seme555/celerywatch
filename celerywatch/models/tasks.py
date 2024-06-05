@@ -73,3 +73,6 @@ class TaskRepository:
             formatted_dt = ts_to_dt.strftime("%Y-%m-%d %H:%M:%S")
 
             # Determine color based on state
+            state = task['state'] or ""
+            color = {
+                "RECEIVED": "black on yellow",
