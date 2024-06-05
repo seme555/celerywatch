@@ -67,3 +67,6 @@ class TaskRepository:
         uuid = task['uuid']
         if uuid:
             # Get the current timestamp as formatted string
+            # timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            timestamp = task['timestamp']
+            ts_to_dt = datetime.fromtimestamp(timestamp)
