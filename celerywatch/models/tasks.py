@@ -79,3 +79,6 @@ class TaskRepository:
                 "STARTED": "black on cyan",
                 "SUCCESS": "black on green",
                 "FAILURE": "black on red"
+            }.get(state.upper(), "white")
+
+
