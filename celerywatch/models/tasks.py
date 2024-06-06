@@ -82,3 +82,6 @@ class TaskRepository:
             }.get(state.upper(), "white")
 
 
+            # Create styled Text object for state
+            state_text = Text(state, style=color)
+            exception = task.get('exception') or ""
