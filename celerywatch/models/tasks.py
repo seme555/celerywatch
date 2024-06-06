@@ -97,3 +97,6 @@ class TaskRepository:
 
             return Task(
                     uuid=uuid,
+                    name=task['name'] or "",
+                    args=str(task['args']) or "",
+                    kwargs=str(task['kwargs']) or "",
