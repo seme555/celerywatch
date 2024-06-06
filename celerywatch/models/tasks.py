@@ -85,3 +85,6 @@ class TaskRepository:
             # Create styled Text object for state
             state_text = Text(state, style=color)
             exception = task.get('exception') or ""
+            exception_text = Text(exception, style="red" if exception else "white")
+
+            traceback = task.get('traceback') or ""
