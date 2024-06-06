@@ -88,3 +88,6 @@ class TaskRepository:
             exception_text = Text(exception, style="red" if exception else "white")
 
             traceback = task.get('traceback') or ""
+            traceback_preview = (traceback[:15] + "...") if len(traceback) > 20 else traceback
+
+            eta = task.get('eta')
