@@ -91,3 +91,6 @@ class TaskRepository:
             traceback_preview = (traceback[:15] + "...") if len(traceback) > 20 else traceback
 
             eta = task.get('eta')
+            if eta is not None:
+                dt = datetime.fromisoformat(eta)
+                eta = dt.strftime("%Y-%m-%d %H:%M:%S")
