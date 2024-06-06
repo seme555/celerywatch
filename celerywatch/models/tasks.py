@@ -94,3 +94,6 @@ class TaskRepository:
             if eta is not None:
                 dt = datetime.fromisoformat(eta)
                 eta = dt.strftime("%Y-%m-%d %H:%M:%S")
+
+            return Task(
+                    uuid=uuid,
