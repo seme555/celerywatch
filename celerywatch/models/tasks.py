@@ -103,3 +103,6 @@ class TaskRepository:
                     state=state,
                     styled_state=state_text,
                     exception=exception_text,
+                    styled_exception=exception_text,
+                    traceback=task.get('traceback') or "",
+                    styled_traceback=traceback_preview,
