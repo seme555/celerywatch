@@ -100,3 +100,6 @@ class TaskRepository:
                     name=task['name'] or "",
                     args=str(task['args']) or "",
                     kwargs=str(task['kwargs']) or "",
+                    state=state,
+                    styled_state=state_text,
+                    exception=exception_text,
