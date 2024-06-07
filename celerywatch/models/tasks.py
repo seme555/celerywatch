@@ -106,3 +106,6 @@ class TaskRepository:
                     styled_exception=exception_text,
                     traceback=task.get('traceback') or "",
                     styled_traceback=traceback_preview,
+                    eta=eta,
+                    timestamp=formatted_dt,
+            )
