@@ -109,3 +109,5 @@ class TaskRepository:
                     eta=eta,
                     timestamp=formatted_dt,
             )
+
+        return None
