@@ -7,3 +7,6 @@ class CustomRetryModalScreen(ModalScreen[list]):
         yield Grid(
             Input(placeholder="Args: arg1, arg2", id="args"),
             Input(placeholder="Kwargs: a=1, b=2", id="kwargs"),
+            Button("Apply", variant="success", id="apply"),
+            Button("Cancel", variant="error", id="cancel"),
+            id="dialog"
