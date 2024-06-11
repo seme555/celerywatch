@@ -10,3 +10,6 @@ class CustomRetryModalScreen(ModalScreen[list]):
             Button("Apply", variant="success", id="apply"),
             Button("Cancel", variant="error", id="cancel"),
             id="dialog"
+        )
+
+    def on_button_pressed(self, event: Button.Pressed) -> None:
