@@ -19,3 +19,6 @@ class CustomRetryModalScreen(ModalScreen[list]):
                           self.query_one("#kwargs", Input).value])
         elif event.button.id == "cancel":
             self.dismiss([False, "", ""])
+
+    def on_key(self, event):
+        if event.key == 'escape':
