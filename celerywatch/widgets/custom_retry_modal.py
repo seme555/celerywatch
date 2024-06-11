@@ -13,3 +13,6 @@ class CustomRetryModalScreen(ModalScreen[list]):
         )
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
+        if event.button.id == "apply":
+            self.dismiss([True, 
+                          self.query_one("#args", Input).value,
