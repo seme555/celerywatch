@@ -16,3 +16,6 @@ class CustomRetryModalScreen(ModalScreen[list]):
         if event.button.id == "apply":
             self.dismiss([True, 
                           self.query_one("#args", Input).value,
+                          self.query_one("#kwargs", Input).value])
+        elif event.button.id == "cancel":
+            self.dismiss([False, "", ""])
