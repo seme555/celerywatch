@@ -1,3 +1,6 @@
 .outline {
         outline: $error round;
         padding: 1;
+    }
+
+.table-outline {
