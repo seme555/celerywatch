@@ -22,3 +22,4 @@ class CustomRetryModalScreen(ModalScreen[list]):
 
     def on_key(self, event):
         if event.key == 'escape':
+            self.dismiss([False, "", ""])
