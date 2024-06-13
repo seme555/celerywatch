@@ -7,3 +7,6 @@
     outline: $primary round;
     padding: 1;
     height: 100%;
+}
+
+Toast {
