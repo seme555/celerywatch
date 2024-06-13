@@ -13,3 +13,6 @@ Toast {
         align: right top;
 }
 
+CustomRetryModalScreen {
+    align: center middle;
+ }
