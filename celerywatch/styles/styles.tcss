@@ -16,3 +16,6 @@ Toast {
 CustomRetryModalScreen {
     align: center middle;
  }
+
+#dialog {
+    grid-size: 2;
