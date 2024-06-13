@@ -10,3 +10,6 @@
 }
 
 Toast {
+        align: right top;
+}
+
