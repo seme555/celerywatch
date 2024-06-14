@@ -28,3 +28,6 @@ CustomRetryModalScreen {
     outline: $primary round;
     background: $surface;
 }
+
+#question {
+    column-span: 2;
