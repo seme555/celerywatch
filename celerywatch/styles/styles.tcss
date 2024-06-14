@@ -25,3 +25,6 @@ CustomRetryModalScreen {
     width: 60;
     height: 11;
     border: thick $background 80%;
+    outline: $primary round;
+    background: $surface;
+}
