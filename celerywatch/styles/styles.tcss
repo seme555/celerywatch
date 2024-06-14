@@ -37,3 +37,5 @@ CustomRetryModalScreen {
 }
 
 Button {
+    width: 100%;
+}
