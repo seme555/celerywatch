@@ -4,6 +4,10 @@
 
 <h1 align="center">CeleryWatch</h1>
 
+<p align="center">
+  <img src="https://github.com/seme555/celerywatch/actions/workflows/ci.yml/badge.svg" alt="CI"/>
+</p>
+
 ---
 
 ## What is CeleryWatch?
